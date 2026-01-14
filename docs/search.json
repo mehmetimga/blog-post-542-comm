@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "lab2.html",
+    "href": "lab2.html",
+    "title": "DSCI 542 Lab 2",
+    "section": "",
+    "text": "In this course, we are using a labor-based grading approach. This means that each task in the lab is graded based on completion rather than evaluation of quality. If a question is completed according to the specifications provided such as meeting the word limit, following the required format, or staying within the allotted time you will receive full credit for that question.\nWhen submitting your lab, please be sure to:\n\nInclude a link to your GitHub repository containing your work as well as a link to your published blog post.\nSubmit a the .qmd file along with a rendered version (either .html or .pdf) of your lab to Gradescope.\nOn Canvas, submit a link to your blog post for peer review."
+  },
+  {
+    "objectID": "lab2.html#lab-assignment-instructions",
+    "href": "lab2.html#lab-assignment-instructions",
+    "title": "DSCI 542 Lab 2",
+    "section": "",
+    "text": "In this course, we are using a labor-based grading approach. This means that each task in the lab is graded based on completion rather than evaluation of quality. If a question is completed according to the specifications provided such as meeting the word limit, following the required format, or staying within the allotted time you will receive full credit for that question.\nWhen submitting your lab, please be sure to:\n\nInclude a link to your GitHub repository containing your work as well as a link to your published blog post.\nSubmit a the .qmd file along with a rendered version (either .html or .pdf) of your lab to Gradescope.\nOn Canvas, submit a link to your blog post for peer review."
+  },
+  {
+    "objectID": "lab2.html#question-1-understand-your-audience",
+    "href": "lab2.html#question-1-understand-your-audience",
+    "title": "DSCI 542 Lab 2",
+    "section": "Question 1: Understand your audience",
+    "text": "Question 1: Understand your audience\nrubric={completion:5}\nAudience Persona: The target reader is a CTO, VP of Engineering, or technology leader at an online poker company. They have experience with online gaming operations and fraud risk, and they care about protecting revenue, reputation, and gaming licenses. They want an executive-level explanation of why AI/ML is now necessary (because cheaters are using more advanced methods), plus a clear summary of how an AI-driven fraud detection system would work at a high level. Their goal is to decide whether to sponsor the initiative based on expected impact, feasibility, and ROI.\nProposed Blog Titles:\n\n“AI-Powered Fraud Detection: Protecting Online Poker Platforms from Modern Threats”\n“From Bots to Collusion: How Machine Learning Can Save Online Gaming”\n“Why Online Poker Needs AI: A Technical Leader’s Case for Fraud Prevention”"
+  },
+  {
+    "objectID": "lab2.html#question-2-write-a-data-science-blog",
+    "href": "lab2.html#question-2-write-a-data-science-blog",
+    "title": "DSCI 542 Lab 2",
+    "section": "Question 2: Write a data science blog",
+    "text": "Question 2: Write a data science blog\nrubric={completion: 30}\n\nGuideline to get started\nI highly recommend you check out this guideline from TowardsDataScience.com, a well-known publisher for data science blogs.\n\n\nTypes of blog post in data science\nThere are many different types of blog posts that can be written in the field of data science. Some common types of blog posts include:\n\nTutorials: These posts provide step-by-step instructions or guidance on how to perform a specific task in data science, such as using a machine learning algorithm or creating a data visualization using a specific package/language.\nExplanations: These posts aim to explain complex concepts or techniques in data science in a way that is easy for a general audience to understand. They might include examples or case studies to illustrate the concept or technique.\nNews and analysis: These posts discuss recent news or research in the field of data science, and provide analysis or commentary on the implications or significance of the news or research.\nPersonal experiences: These posts share the experiences of a data scientist or student learning data science, and might include stories about challenges and successes, as well as tips and advice for others interested in pursuing a career in data science.\nComparisons and contrasts: These posts compare and contrast different tools, approaches, or concepts in data science, and might include pros and cons or recommendations for when to use each option.\n\nOverall, there are many different types of blog posts that can be written in data science, and the type of post will depend on the goals and audience of the blog.\nFor your inspiration, this is a blog post that Nico Van den Hooff, a MDS alumni, wrote last year\nExploring the Most Popular Machine Learning and Deep Learning GitHub Repositories\n\n\nLength\nFor this assignment, we suggest aiming for a word count of around 1200 (+ or - 300) words, not including code, captions, references, etc. Please consider the amount of time it will take your audience to read your post and keep this in mind as you plan and write your content. We recommend creating a brief outline for the blog first before diving in.\n\n\nHow to write your blog\nIn this question, you are asked to write your blog using Quarto.\nStep 1: Login to Github\nStep 2: Create your Quarto Blog.\nStep 3: Start writing and finish! Push/publish your changes, and .\nStep 4: Submit the blog’s outline as well as a link to your blog. Your blog can be published either via Quarto Pub or GitHub Pages.\nYour blog will be evaluated for completion based on the word count as well as the link to your blog functioning as expected.\n\n\nSome prompts to get you started (Optional)\n\nWhat is the main topic or concept you want to write about in your blog post? What makes it interesting or important to your audience?\nWhat type of data science blog do you want to write? (see different types above)\nWhat are the key points or ideas you want to include in your blog post? How can you organize these points to create a clear and coherent structure for your post?\nHow can you use examples or case studies to illustrate the concepts or techniques you are discussing in your blog post? What are some real-world applications of the topic you are writing about?\nHow can you make your blog post engaging and interactive for your audience? What types of media or interactive elements can you include to make your post more interesting and interactive?\nHow can you conclude your blog post in a way that leaves a lasting impression on your readers? What are the main takeaways you want your readers to remember after reading your post?\n\nANSWER:\nBlog Outline:\n\nIntroduction: Fraud problem in online poker\nBusiness impact: Why it matters for revenue and reputation\nTypes of fraud: Collusion, bots, multi-accounting\nData science solution: AI and machine learning\nMy role and proposal: Leading the initiative\nConclusion: Call to action\n\nBlog Post:"
+  },
+  {
+    "objectID": "lab2.html#introduction",
+    "href": "lab2.html#introduction",
+    "title": "DSCI 542 Lab 2",
+    "section": "Introduction",
+    "text": "Introduction\nAs technology leaders in online gaming, you understand that fraud threatens our poker platforms. Cheaters use collusion, bots, and multi-accounting to steal from honest players. This damages our reputation, risks licenses, and drives away customers."
+  },
+  {
+    "objectID": "lab2.html#why-this-matters",
+    "href": "lab2.html#why-this-matters",
+    "title": "DSCI 542 Lab 2",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nFraud hurts our business in three ways:\n\nRevenue Loss: Players leave when they lose trust\nReputation Damage: Bad incidents spread quickly online\nRegulatory Risk: We must prove we protect players and maintain fair games"
+  },
+  {
+    "objectID": "lab2.html#types-of-fraud",
+    "href": "lab2.html#types-of-fraud",
+    "title": "DSCI 542 Lab 2",
+    "section": "Types of Fraud",
+    "text": "Types of Fraud\nCollusion: Players secretly work together, sharing card information or coordinating bets.\nBots: Computer programs that play automatically, pretending to be human players.\nMulti-Accounting: One person creates multiple accounts to manipulate games."
+  },
+  {
+    "objectID": "lab2.html#how-data-science-helps",
+    "href": "lab2.html#how-data-science-helps",
+    "title": "DSCI 542 Lab 2",
+    "section": "How Data Science Helps",
+    "text": "How Data Science Helps\nMachine learning algorithms analyze betting patterns and player connections to detect suspicious behavior. These systems process millions of hands quickly and flag unusual patterns that humans might miss."
+  },
+  {
+    "objectID": "lab2.html#my-role-leading-this-initiative",
+    "href": "lab2.html#my-role-leading-this-initiative",
+    "title": "DSCI 542 Lab 2",
+    "section": "My Role: Leading This Initiative",
+    "text": "My Role: Leading This Initiative\nI’ve spent the past year researching and building a proof-of-concept fraud detection system. I need your sponsorship to deploy this in production."
+  },
+  {
+    "objectID": "lab2.html#conclusion",
+    "href": "lab2.html#conclusion",
+    "title": "DSCI 542 Lab 2",
+    "section": "Conclusion",
+    "text": "Conclusion\nInvesting in AI fraud detection protects our platform and ensures growth. The return on investment is clear - we save millions while building trust with players."
+  },
+  {
+    "objectID": "lab2.html#peer-feedback-to-be-completed-next-week",
+    "href": "lab2.html#peer-feedback-to-be-completed-next-week",
+    "title": "DSCI 542 Lab 2",
+    "section": "Peer Feedback (to be completed next week)",
+    "text": "Peer Feedback (to be completed next week)\nAfter the submission deadline, you will get randomly assigned 2 blogs from your classmates to review.\nPeer review allows you to receive feedback on your writing from multiple peers, which help you see your work more objectively and identify areas where they can revise and improve their writing. It also fosters a sense of community and a safe environment to collaborate and help each other with constructive feedback.\nRead the blog posts carefully, paying attention to the content, organization, and style of the writing. Consider the following questions as you review:\n\nIs the content of the blog post accurate and well-researched?\nIs the structure of the blog post clear and logical?\nAre the ideas in the blog post effectively communicated and easy to understand?\nIs the writing style of the blog post engaging and appropriate for the audience?\n\nWrite a review for each of the blog posts, addressing the above questions and any other issues you feel are relevant. Use specific examples from the posts to support your points."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Blog",
+    "section": "",
+    "text": "Welcome to my data science blog! Here I share insights, experiences, and learnings from my work in data science and AI."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Welcome to My Data Science Blog",
+    "section": "",
+    "text": "Welcome to my data science blog! Here I share insights, experiences, and learnings from my work in data science and AI."
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Welcome to My Data Science Blog",
+    "section": "Recent Posts",
+    "text": "Recent Posts\n\nDSCI 542 Lab 2"
+  }
+]
