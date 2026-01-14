@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mehmet Imga">
 
-<title>DSCI 542 Lab 2 – Mehmet Imga’s Data Science Blog</title>
+<title>AI-Powered Fraud Detection: Protecting Online Poker Platforms – Mehmet Imga’s Data Science Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -2520,9 +2521,9 @@ vertical-align: -.125em;
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Mehmet Imga’s Data Science Blog</span>
     </a>
   </div>
@@ -2532,8 +2533,12 @@ vertical-align: -.125em;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../posts/fraud-detection-poker.html" aria-current="page"> 
+<span class="menu-text">Blog Post</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -2551,26 +2556,18 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-assignment-instructions" id="toc-lab-assignment-instructions" class="nav-link active" data-scroll-target="#lab-assignment-instructions">Lab Assignment Instructions</a></li>
-  <li><a href="#question-1-understand-your-audience" id="toc-question-1-understand-your-audience" class="nav-link" data-scroll-target="#question-1-understand-your-audience">Question 1: Understand your audience</a></li>
-  <li><a href="#question-2-write-a-data-science-blog" id="toc-question-2-write-a-data-science-blog" class="nav-link" data-scroll-target="#question-2-write-a-data-science-blog">Question 2: Write a data science blog</a>
-  <ul class="collapse">
-  <li><a href="#guideline-to-get-started" id="toc-guideline-to-get-started" class="nav-link" data-scroll-target="#guideline-to-get-started">Guideline to get started</a></li>
-  <li><a href="#types-of-blog-post-in-data-science" id="toc-types-of-blog-post-in-data-science" class="nav-link" data-scroll-target="#types-of-blog-post-in-data-science">Types of blog post in data science</a></li>
-  <li><a href="#length" id="toc-length" class="nav-link" data-scroll-target="#length">Length</a></li>
-  <li><a href="#how-to-write-your-blog" id="toc-how-to-write-your-blog" class="nav-link" data-scroll-target="#how-to-write-your-blog">How to write your blog</a></li>
-  <li><a href="#some-prompts-to-get-you-started-optional" id="toc-some-prompts-to-get-you-started-optional" class="nav-link" data-scroll-target="#some-prompts-to-get-you-started-optional">Some prompts to get you started (Optional)</a></li>
-  </ul></li>
-  <li><a href="#ai-powered-fraud-detection-protecting-online-poker-platforms" id="toc-ai-powered-fraud-detection-protecting-online-poker-platforms" class="nav-link" data-scroll-target="#ai-powered-fraud-detection-protecting-online-poker-platforms">AI-Powered Fraud Detection: Protecting Online Poker Platforms</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
   <li><a href="#types-of-fraud" id="toc-types-of-fraud" class="nav-link" data-scroll-target="#types-of-fraud">Types of Fraud</a></li>
   <li><a href="#how-data-science-helps" id="toc-how-data-science-helps" class="nav-link" data-scroll-target="#how-data-science-helps">How Data Science Helps</a></li>
   <li><a href="#my-role-leading-this-initiative" id="toc-my-role-leading-this-initiative" class="nav-link" data-scroll-target="#my-role-leading-this-initiative">My Role: Leading This Initiative</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#peer-feedback-to-be-completed-next-week" id="toc-peer-feedback-to-be-completed-next-week" class="nav-link" data-scroll-target="#peer-feedback-to-be-completed-next-week">Peer Feedback (to be completed next week)</a></li>
-  </ul></li>
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
+  <li><a href="#why-this-matters-1" id="toc-why-this-matters-1" class="nav-link" data-scroll-target="#why-this-matters-1">Why This Matters</a></li>
+  <li><a href="#types-of-fraud-1" id="toc-types-of-fraud-1" class="nav-link" data-scroll-target="#types-of-fraud-1">Types of Fraud</a></li>
+  <li><a href="#how-data-science-helps-1" id="toc-how-data-science-helps-1" class="nav-link" data-scroll-target="#how-data-science-helps-1">How Data Science Helps</a></li>
+  <li><a href="#my-role-leading-this-initiative-1" id="toc-my-role-leading-this-initiative-1" class="nav-link" data-scroll-target="#my-role-leading-this-initiative-1">My Role: Leading This Initiative</a></li>
+  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -2579,15 +2576,31 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DSCI 542 Lab 2</h1>
-<p class="subtitle lead">Creating a Blog Post for Your Audience</p>
-</div>
+<h1 class="title">AI-Powered Fraud Detection: Protecting Online Poker Platforms</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">data-science</div>
+    <div class="quarto-category">fraud-detection</div>
+    <div class="quarto-category">online-gaming</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mehmet Imga </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">today</p>
+    </div>
+  </div>
   
     
   </div>
@@ -2597,87 +2610,6 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="lab-assignment-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="lab-assignment-instructions">Lab Assignment Instructions</h2>
-<p>In this course, we are using a labor-based grading approach. This means that each task in the lab is graded based on completion rather than evaluation of quality. If a question is completed according to the specifications provided such as meeting the word limit, following the required format, or staying within the allotted time you will receive full credit for that question.</p>
-<p>When submitting your lab, please be sure to:</p>
-<ul>
-<li><p>Include a link to your GitHub repository containing your work as well as a link to your published blog post.</p></li>
-<li><p>Submit a the <code>.qmd</code> file along with a rendered version (either <code>.html</code> or <code>.pdf</code>) of your lab to Gradescope.</p></li>
-<li><p>On Canvas, submit a link to your blog post for peer review.</p></li>
-</ul>
-</section>
-<section id="question-1-understand-your-audience" class="level2">
-<h2 class="anchored" data-anchor-id="question-1-understand-your-audience">Question 1: Understand your audience</h2>
-<p>rubric={completion:5}</p>
-<p><strong>Audience Persona:</strong> The target reader is a CTO, VP of Engineering, or technology leader at an online poker company. They have experience with online gaming operations and fraud risk, and they care about protecting revenue, reputation, and gaming licenses. They want an executive-level explanation of why AI/ML is now necessary (because cheaters are using more advanced methods), plus a clear summary of how an AI-driven fraud detection system would work at a high level. Their goal is to decide whether to sponsor the initiative based on expected impact, feasibility, and ROI.</p>
-<p><strong>Proposed Blog Titles:</strong></p>
-<ul>
-<li>“AI-Powered Fraud Detection: Protecting Online Poker Platforms from Modern Threats”</li>
-<li>“From Bots to Collusion: How Machine Learning Can Save Online Gaming”</li>
-<li>“Why Online Poker Needs AI: A Technical Leader’s Case for Fraud Prevention”</li>
-</ul>
-</section>
-<section id="question-2-write-a-data-science-blog" class="level2">
-<h2 class="anchored" data-anchor-id="question-2-write-a-data-science-blog">Question 2: Write a data science blog</h2>
-<p>rubric={completion: 30}</p>
-<section id="guideline-to-get-started" class="level3">
-<h3 class="anchored" data-anchor-id="guideline-to-get-started">Guideline to get started</h3>
-<p>I highly recommend you check out this <a href="https://towardsdatascience.com/questions-96667b06af5#1d11">guideline</a> from TowardsDataScience.com, a well-known publisher for data science blogs.</p>
-</section>
-<section id="types-of-blog-post-in-data-science" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-blog-post-in-data-science">Types of blog post in data science</h3>
-<p>There are many different types of blog posts that can be written in the field of data science. Some common types of blog posts include:</p>
-<ul>
-<li><strong>Tutorials</strong>: These posts provide step-by-step instructions or guidance on how to perform a specific task in data science, such as using a machine learning algorithm or creating a data visualization using a specific package/language.</li>
-<li><strong>Explanations</strong>: These posts aim to explain complex concepts or techniques in data science in a way that is easy for a general audience to understand. They might include examples or case studies to illustrate the concept or technique.</li>
-<li><strong>News and analysis</strong>: These posts discuss recent news or research in the field of data science, and provide analysis or commentary on the implications or significance of the news or research.</li>
-<li><strong>Personal experiences</strong>: These posts share the experiences of a data scientist or student learning data science, and might include stories about challenges and successes, as well as tips and advice for others interested in pursuing a career in data science.</li>
-<li><strong>Comparisons and contrasts</strong>: These posts compare and contrast different tools, approaches, or concepts in data science, and might include pros and cons or recommendations for when to use each option.</li>
-</ul>
-<p>Overall, there are many different types of blog posts that can be written in data science, and the type of post will depend on the goals and audience of the blog.</p>
-<p>For your inspiration, this is a blog post that Nico Van den Hooff, a MDS alumni, wrote last year<br>
-<a href="https://medium.com/towards-data-science/exploring-the-most-popular-machine-learning-and-deep-learning-github-repositories-90b9ecf12be7">Exploring the Most Popular Machine Learning and Deep Learning GitHub Repositories</a></p>
-</section>
-<section id="length" class="level3">
-<h3 class="anchored" data-anchor-id="length">Length</h3>
-<p>For this assignment, we suggest aiming for a word count of around 1200 (+ or - 300) words, not including code, captions, references, etc. Please consider the amount of time it will take your audience to read your post and keep this in mind as you plan and write your content. We recommend creating a brief outline for the blog first before diving in.</p>
-</section>
-<section id="how-to-write-your-blog" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-write-your-blog">How to write your blog</h3>
-<p>In this question, you are asked to write your blog using Quarto.</p>
-<p>Step 1: Login to Github</p>
-<p>Step 2: Create your <a href="https://quarto.org/docs/websites/website-blog.html">Quarto Blog</a>.</p>
-<p>Step 3: Start writing and finish! Push/publish your changes, and .</p>
-<p>Step 4: Submit the blog’s outline as well as <strong>a link to your blog</strong>. Your blog can be published either via <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a> or <a href="https://docs.github.com/en/pages">GitHub Pages</a>.</p>
-<p>Your blog will be evaluated for completion based on the word count as well as the link to your blog functioning as expected.</p>
-</section>
-<section id="some-prompts-to-get-you-started-optional" class="level3">
-<h3 class="anchored" data-anchor-id="some-prompts-to-get-you-started-optional">Some prompts to get you started (Optional)</h3>
-<ul>
-<li>What is the main topic or concept you want to write about in your blog post? What makes it interesting or important to your audience?</li>
-<li>What type of data science blog do you want to write? (see different types above)</li>
-<li>What are the key points or ideas you want to include in your blog post? How can you organize these points to create a clear and coherent structure for your post?</li>
-<li>How can you use examples or case studies to illustrate the concepts or techniques you are discussing in your blog post? What are some real-world applications of the topic you are writing about?</li>
-<li>How can you make your blog post engaging and interactive for your audience? What types of media or interactive elements can you include to make your post more interesting and interactive?</li>
-<li>How can you conclude your blog post in a way that leaves a lasting impression on your readers? What are the main takeaways you want your readers to remember after reading your post?</li>
-</ul>
-<p><strong>ANSWER:</strong></p>
-<p><strong>Blog Outline:</strong></p>
-<ol type="1">
-<li>Introduction: Fraud problem in online poker</li>
-<li>Business impact: Why it matters for revenue and reputation</li>
-<li>Types of fraud: Collusion, bots, multi-accounting</li>
-<li>Data science solution: AI and machine learning</li>
-<li>My role and proposal: Leading the initiative</li>
-<li>Conclusion: Call to action</li>
-</ol>
-<p><strong>Blog Post:</strong></p>
-<hr>
-</section>
-</section>
-<section id="ai-powered-fraud-detection-protecting-online-poker-platforms" class="level1">
-<h1>AI-Powered Fraud Detection: Protecting Online Poker Platforms</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>As technology leaders in online gaming, you understand that fraud threatens our poker platforms. Cheaters use collusion, bots, and multi-accounting to steal from honest players. This damages our reputation, risks licenses, and drives away customers.</p>
@@ -2708,23 +2640,39 @@ vertical-align: -.125em;
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>Investing in AI fraud detection protects our platform and ensures growth. The return on investment is clear - we save millions while building trust with players.</p>
-<hr>
 </section>
-<section id="peer-feedback-to-be-completed-next-week" class="level2">
-<h2 class="anchored" data-anchor-id="peer-feedback-to-be-completed-next-week">Peer Feedback (to be completed next week)</h2>
-<p>After the submission deadline, you will get randomly assigned 2 blogs from your classmates to review.</p>
-<p>Peer review allows you to receive feedback on your writing from multiple peers, which help you see your work more objectively and identify areas where they can revise and improve their writing. It also fosters a sense of community and a safe environment to collaborate and help each other with constructive feedback.</p>
-<p>Read the blog posts carefully, paying attention to the content, organization, and style of the writing. Consider the following questions as you review:</p>
+<section id="introduction-1" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-1">Introduction</h2>
+<p>As technology leaders in online gaming, you understand that fraud threatens our poker platforms. Cheaters use collusion, bots, and multi-accounting to steal from honest players. This damages our reputation, risks licenses, and drives away customers.</p>
+</section>
+<section id="why-this-matters-1" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-1">Why This Matters</h2>
+<p>Fraud hurts our business in three ways:</p>
 <ul>
-<li>Is the content of the blog post accurate and well-researched?</li>
-<li>Is the structure of the blog post clear and logical?</li>
-<li>Are the ideas in the blog post effectively communicated and easy to understand?</li>
-<li>Is the writing style of the blog post engaging and appropriate for the audience?</li>
+<li><strong>Revenue Loss</strong>: Players leave when they lose trust</li>
+<li><strong>Reputation Damage</strong>: Bad incidents spread quickly online</li>
+<li><strong>Regulatory Risk</strong>: We must prove we protect players and maintain fair games</li>
 </ul>
-<p>Write a review for each of the blog posts, addressing the above questions and any other issues you feel are relevant. Use specific examples from the posts to support your points.</p>
-
-
 </section>
+<section id="types-of-fraud-1" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-fraud-1">Types of Fraud</h2>
+<p><strong>Collusion</strong>: Players secretly work together, sharing card information or coordinating bets.</p>
+<p><strong>Bots</strong>: Computer programs that play automatically, pretending to be human players.</p>
+<p><strong>Multi-Accounting</strong>: One person creates multiple accounts to manipulate games.</p>
+</section>
+<section id="how-data-science-helps-1" class="level2">
+<h2 class="anchored" data-anchor-id="how-data-science-helps-1">How Data Science Helps</h2>
+<p>Machine learning algorithms analyze betting patterns and player connections to detect suspicious behavior. These systems process millions of hands quickly and flag unusual patterns that humans might miss.</p>
+</section>
+<section id="my-role-leading-this-initiative-1" class="level2">
+<h2 class="anchored" data-anchor-id="my-role-leading-this-initiative-1">My Role: Leading This Initiative</h2>
+<p>I’ve spent the past year researching and building a proof-of-concept fraud detection system. I need your sponsorship to deploy this in production.</p>
+</section>
+<section id="conclusion-1" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-1">Conclusion</h2>
+<p>Investing in AI fraud detection protects our platform and ensures growth. The return on investment is clear - we save millions while building trust with players.</p>
+
+
 </section>
 
 </main> <!-- /main -->
