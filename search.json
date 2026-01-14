@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "posts/fraud-detection-poker.html",
+    "href": "posts/fraud-detection-poker.html",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "",
+    "text": "Online poker is a business built on trust. Players join because they want fair games. But fraud can break this trust fast. In online poker, cheaters try to win money in unfair ways. They use collusion, bots, and multi-accounting. This hurts honest players and it hurts the platform.\nIn this post, I explain the fraud problem in simple terms. I also explain why AI and machine learning can help us. The goal is not to replace our security team. The goal is to support them with better tools."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#introduction",
+    "href": "posts/fraud-detection-poker.html#introduction",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "",
+    "text": "Online poker is a business built on trust. Players join because they want fair games. But fraud can break this trust fast. In online poker, cheaters try to win money in unfair ways. They use collusion, bots, and multi-accounting. This hurts honest players and it hurts the platform.\nIn this post, I explain the fraud problem in simple terms. I also explain why AI and machine learning can help us. The goal is not to replace our security team. The goal is to support them with better tools."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#why-this-matters",
+    "href": "posts/fraud-detection-poker.html#why-this-matters",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Why This Matters",
+    "text": "Why This Matters\nFraud hurts our business in three ways:\n\nRevenue loss: Players leave when they lose trust, and they stop depositing money.\nReputation damage: Bad incidents spread quickly online. A few posts can hurt us for months.\nRegulatory risk: We must prove we protect players and keep games fair. If we fail, we can lose licenses.\n\nFraud also increases support costs. When players complain, we spend time on tickets, refunds, and reviews. This is time we could use to improve the product."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#types-of-fraud",
+    "href": "posts/fraud-detection-poker.html#types-of-fraud",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Types of Fraud",
+    "text": "Types of Fraud\nCollusion: Two or more players work together. They may share information about cards. They may fold to help a partner. They may bet in a way that traps a third player. Collusion is hard to catch because each hand can look normal. The pattern becomes clear only after many hands.\nBots: A bot is a computer program that plays poker. Some bots are very strong. They can play many tables at once. They do not get tired. They react fast and they follow a fixed style. A bot can steal value from human players over time.\nMulti-accounting: One person creates more than one account. They may use these accounts to sit at the same table. This gives them an unfair advantage. They may also use multiple accounts to avoid bans or limits."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#why-fraud-is-getting-harder",
+    "href": "posts/fraud-detection-poker.html#why-fraud-is-getting-harder",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Why Fraud Is Getting Harder",
+    "text": "Why Fraud Is Getting Harder\nFraud is not new, but it is changing. Cheaters now have better tools. They can use scripts, automation, and AI helpers. They can also hide behind VPNs and many devices. This means our old rule-based checks are not enough. We need a smarter system that can learn and adapt."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#what-are-ai-and-machine-learning",
+    "href": "posts/fraud-detection-poker.html#what-are-ai-and-machine-learning",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "What Are AI and Machine Learning?",
+    "text": "What Are AI and Machine Learning?\nArtificial intelligence (AI) is a broad term. It means computers can do tasks that normally need human thinking.\nMachine learning (ML) is one way to build AI. In ML, a model learns patterns from data. It does not follow only fixed rules. It improves when it sees more examples.\nFor fraud detection, ML is useful because cheating often looks like “small signals”. One signal is not enough. But many signals together can show a clear risk."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#how-data-science-helps",
+    "href": "posts/fraud-detection-poker.html#how-data-science-helps",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "How Data Science Helps",
+    "text": "How Data Science Helps\nMachine learning can help in two main ways:\n\nFind unusual behavior: The model learns what “normal” play looks like. Then it looks for behavior that is far from normal.\nFind risky relationships: The model can find groups of accounts that look connected, even if the players try to hide it.\n\n\nExamples of Signals (Simple)\nHere are a few examples of signals we can use. Each signal alone may be normal. But many signals together can be a strong warning:\n\nVery fast decisions on almost every hand (often seen in bots)\nVery stable timing (same delay again and again)\nUnusual table pairing (the same accounts meet too often)\nChip movement patterns (one account often loses to the same account)\nSimilar play style across many accounts (can suggest one person controls them)\n\nWe do not need to know a player’s real identity to see these patterns. We only need the game and session data.\n\n\nWhat Data We Use (High Level)\nWe already have a lot of data on the platform. For example:\n\nGame data: hands played, actions, bet sizes, win/loss, table history\nTiming data: decision time, play schedule, session length\nAccount and device data: device, IP region (not exact location), browser/app info\nNetwork patterns: who plays with whom, how often, and in which games\n\nWe must handle this data carefully. We should follow privacy rules and keep access limited.\n\n\nWhat the System Does\nAt a simple level, the system works like this:\n\nStep A: collect features from game and account data\nStep B: score each player (or each session) with a risk score\nStep C: create alerts when the score is high\nStep D: send alerts to a human reviewer\nStep E: use reviewer feedback to improve the model\n\nThe output is not “ban this player now”. The output is “this looks risky, please review”.\n\n\nWhy This Is Better Than Only Rules\nRules are still useful. For example, “10 accounts from the same device” is a clear signal. But cheaters learn our rules. They adjust their behavior. ML can help because it looks at many small signals together, not one rule at a time.\n\n\nHow We Avoid False Bans\nWe must be careful. A wrong ban is very costly. It hurts trust and it creates support work. So we should use a safe process:\n\nRisk score, not auto-ban: the model suggests review, not punishment.\nHuman review: an analyst checks the case before action.\nClear evidence: we look for repeated patterns, not one strange hand.\nAppeal process: players can ask for review if we take action.\n\nThis keeps the system fair. It also helps the team learn which signals are strong."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#my-role-leading-this-initiative",
+    "href": "posts/fraud-detection-poker.html#my-role-leading-this-initiative",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "My Role: Leading This Initiative",
+    "text": "My Role: Leading This Initiative\nOver the past year, I have researched this problem and built a proof of concept. The prototype shows we can:\n\nprocess large volumes of hand history data\ncreate simple risk scores\nfind suspicious clusters of accounts\nreduce manual work for the security team\n\nTo move from prototype to production, we need time and support. We need clear ownership, data pipelines, and a review process."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#a-simple-rollout-plan",
+    "href": "posts/fraud-detection-poker.html#a-simple-rollout-plan",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "A Simple Rollout Plan",
+    "text": "A Simple Rollout Plan\nWe can start small and reduce risk:\n\nPhase 1 (monitor only): run the model silently and measure quality.\nPhase 2 (alert + review): send alerts to the security team for review.\nPhase 3 (actions): after we trust the system, automate safe actions (for example, extra checks, table restrictions, or faster reviews).\n\nThis approach helps us avoid false bans. It also helps the team build trust in the tool."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#business-value-simple-view",
+    "href": "posts/fraud-detection-poker.html#business-value-simple-view",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Business Value (Simple View)",
+    "text": "Business Value (Simple View)\nAI fraud detection helps us:\n\nprotect honest players\nkeep players longer (better retention)\nreduce costly incidents and bad press\nsupport licensing and compliance needs\nsave time for the security team\n\nEven a small improvement can have a big impact, because poker revenue depends on active, trusted players."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#what-we-need-to-build-this-simple",
+    "href": "posts/fraud-detection-poker.html#what-we-need-to-build-this-simple",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "What We Need to Build This (Simple)",
+    "text": "What We Need to Build This (Simple)\nTo make this work in production, we need a few basic things:\n\nGood data pipelines: clean hand history data and stable tables\nA model training process: regular updates, with tests\nA review dashboard: a simple screen for the security team\nMonitoring: track false positives, true positives, and model drift\n\nThis does not need to be perfect on day one. But it must be stable and safe."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#short-faq",
+    "href": "posts/fraud-detection-poker.html#short-faq",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Short FAQ",
+    "text": "Short FAQ\nWill AI replace the security team?\nNo. AI helps the team work faster. People still make final decisions.\nCan cheaters trick the model?\nSometimes. That is why we update models, mix rules with ML, and use human review.\nIs this only for poker?\nNo. The same ideas can help in other games too, like casino games and sports betting."
+  },
+  {
+    "objectID": "posts/fraud-detection-poker.html#conclusion",
+    "href": "posts/fraud-detection-poker.html#conclusion",
+    "title": "AI-Powered Fraud Detection: Protecting Online Poker Platforms",
+    "section": "Conclusion",
+    "text": "Conclusion\nFraud is a real threat for online poker platforms. It damages trust, revenue, and compliance. Cheaters are also improving their tools, so we must improve our defenses.\nAI and machine learning will not solve everything alone. But they can help us find fraud faster and more accurately. With a careful rollout and strong human review, we can protect honest players and grow the business safely.\nIf we act now, we reduce risk before the next big incident. We also show players and regulators that we take game integrity seriously."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Blog",
+    "section": "",
+    "text": "Welcome to my data science blog! Here I share insights, experiences, and learnings from my work in data science and AI."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Welcome to My Data Science Blog",
+    "section": "",
+    "text": "Welcome to my data science blog! Here I share insights, experiences, and learnings from my work in data science and AI."
+  },
+  {
+    "objectID": "index.html#recent-posts",
+    "href": "index.html#recent-posts",
+    "title": "Welcome to My Data Science Blog",
+    "section": "Recent Posts",
+    "text": "Recent Posts\n\nAI-Powered Fraud Detection: Protecting Online Poker Platforms"
+  }
+]
