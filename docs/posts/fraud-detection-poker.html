@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mehmet Imga">
+<meta name="dcterms.date" content="2026-01-13">
 
 <title>AI-Powered Fraud Detection: Protecting Online Poker Platforms – Mehmet Imga’s Data Science Blog</title>
 <style>
@@ -2559,15 +2560,18 @@ vertical-align: -.125em;
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why This Matters</a></li>
   <li><a href="#types-of-fraud" id="toc-types-of-fraud" class="nav-link" data-scroll-target="#types-of-fraud">Types of Fraud</a></li>
-  <li><a href="#how-data-science-helps" id="toc-how-data-science-helps" class="nav-link" data-scroll-target="#how-data-science-helps">How Data Science Helps</a></li>
+  <li><a href="#why-fraud-is-getting-harder" id="toc-why-fraud-is-getting-harder" class="nav-link" data-scroll-target="#why-fraud-is-getting-harder">Why Fraud Is Getting Harder</a></li>
+  <li><a href="#what-are-ai-and-machine-learning" id="toc-what-are-ai-and-machine-learning" class="nav-link" data-scroll-target="#what-are-ai-and-machine-learning">What Are AI and Machine Learning?</a></li>
+  <li><a href="#how-data-science-helps" id="toc-how-data-science-helps" class="nav-link" data-scroll-target="#how-data-science-helps">How Data Science Helps</a>
+  <ul class="collapse">
+  <li><a href="#what-data-we-use-high-level" id="toc-what-data-we-use-high-level" class="nav-link" data-scroll-target="#what-data-we-use-high-level">What Data We Use (High Level)</a></li>
+  <li><a href="#what-the-system-does" id="toc-what-the-system-does" class="nav-link" data-scroll-target="#what-the-system-does">What the System Does</a></li>
+  <li><a href="#why-this-is-better-than-only-rules" id="toc-why-this-is-better-than-only-rules" class="nav-link" data-scroll-target="#why-this-is-better-than-only-rules">Why This Is Better Than Only Rules</a></li>
+  </ul></li>
   <li><a href="#my-role-leading-this-initiative" id="toc-my-role-leading-this-initiative" class="nav-link" data-scroll-target="#my-role-leading-this-initiative">My Role: Leading This Initiative</a></li>
+  <li><a href="#a-simple-rollout-plan" id="toc-a-simple-rollout-plan" class="nav-link" data-scroll-target="#a-simple-rollout-plan">A Simple Rollout Plan</a></li>
+  <li><a href="#business-value-simple-view" id="toc-business-value-simple-view" class="nav-link" data-scroll-target="#business-value-simple-view">Business Value (Simple View)</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
-  <li><a href="#why-this-matters-1" id="toc-why-this-matters-1" class="nav-link" data-scroll-target="#why-this-matters-1">Why This Matters</a></li>
-  <li><a href="#types-of-fraud-1" id="toc-types-of-fraud-1" class="nav-link" data-scroll-target="#types-of-fraud-1">Types of Fraud</a></li>
-  <li><a href="#how-data-science-helps-1" id="toc-how-data-science-helps-1" class="nav-link" data-scroll-target="#how-data-science-helps-1">How Data Science Helps</a></li>
-  <li><a href="#my-role-leading-this-initiative-1" id="toc-my-role-leading-this-initiative-1" class="nav-link" data-scroll-target="#my-role-leading-this-initiative-1">My Role: Leading This Initiative</a></li>
-  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -2598,7 +2602,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">today</p>
+      <p class="date">January 13, 2026</p>
     </div>
   </div>
   
@@ -2612,65 +2616,107 @@ vertical-align: -.125em;
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>As technology leaders in online gaming, you understand that fraud threatens our poker platforms. Cheaters use collusion, bots, and multi-accounting to steal from honest players. This damages our reputation, risks licenses, and drives away customers.</p>
+<p>Online poker is a business built on trust. Players join because they want fair games. But fraud can break this trust fast. In online poker, cheaters try to win money in unfair ways. They use collusion, bots, and multi-accounting. This hurts honest players and it hurts the platform.</p>
+<p>In this post, I explain the fraud problem in simple terms. I also explain why AI and machine learning can help us. The goal is not to replace our security team. The goal is to support them with better tools.</p>
 </section>
 <section id="why-this-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
 <p>Fraud hurts our business in three ways:</p>
 <ul>
-<li><strong>Revenue Loss</strong>: Players leave when they lose trust</li>
-<li><strong>Reputation Damage</strong>: Bad incidents spread quickly online</li>
-<li><strong>Regulatory Risk</strong>: We must prove we protect players and maintain fair games</li>
+<li><strong>Revenue loss</strong>: Players leave when they lose trust, and they stop depositing money.</li>
+<li><strong>Reputation damage</strong>: Bad incidents spread quickly online. A few posts can hurt us for months.</li>
+<li><strong>Regulatory risk</strong>: We must prove we protect players and keep games fair. If we fail, we can lose licenses.</li>
 </ul>
+<p>Fraud also increases support costs. When players complain, we spend time on tickets, refunds, and reviews. This is time we could use to improve the product.</p>
 </section>
 <section id="types-of-fraud" class="level2">
 <h2 class="anchored" data-anchor-id="types-of-fraud">Types of Fraud</h2>
-<p><strong>Collusion</strong>: Players secretly work together, sharing card information or coordinating bets.</p>
-<p><strong>Bots</strong>: Computer programs that play automatically, pretending to be human players.</p>
-<p><strong>Multi-Accounting</strong>: One person creates multiple accounts to manipulate games.</p>
+<p><strong>Collusion</strong>: Two or more players work together. They may share information about cards. They may fold to help a partner. They may bet in a way that traps a third player. Collusion is hard to catch because each hand can look normal. The pattern becomes clear only after many hands.</p>
+<p><strong>Bots</strong>: A bot is a computer program that plays poker. Some bots are very strong. They can play many tables at once. They do not get tired. They react fast and they follow a fixed style. A bot can steal value from human players over time.</p>
+<p><strong>Multi-accounting</strong>: One person creates more than one account. They may use these accounts to sit at the same table. This gives them an unfair advantage. They may also use multiple accounts to avoid bans or limits.</p>
+</section>
+<section id="why-fraud-is-getting-harder" class="level2">
+<h2 class="anchored" data-anchor-id="why-fraud-is-getting-harder">Why Fraud Is Getting Harder</h2>
+<p>Fraud is not new, but it is changing. Cheaters now have better tools. They can use scripts, automation, and AI helpers. They can also hide behind VPNs and many devices. This means our old rule-based checks are not enough. We need a smarter system that can learn and adapt.</p>
+</section>
+<section id="what-are-ai-and-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-ai-and-machine-learning">What Are AI and Machine Learning?</h2>
+<p><strong>Artificial intelligence (AI)</strong> is a broad term. It means computers can do tasks that normally need human thinking.</p>
+<p><strong>Machine learning (ML)</strong> is one way to build AI. In ML, a model learns patterns from data. It does not follow only fixed rules. It improves when it sees more examples.</p>
+<p>For fraud detection, ML is useful because cheating often looks like “small signals”. One signal is not enough. But many signals together can show a clear risk.</p>
 </section>
 <section id="how-data-science-helps" class="level2">
 <h2 class="anchored" data-anchor-id="how-data-science-helps">How Data Science Helps</h2>
-<p>Machine learning algorithms analyze betting patterns and player connections to detect suspicious behavior. These systems process millions of hands quickly and flag unusual patterns that humans might miss.</p>
+<p>Machine learning can help in two main ways:</p>
+<ol type="1">
+<li><strong>Find unusual behavior</strong>: The model learns what “normal” play looks like. Then it looks for behavior that is far from normal.</li>
+<li><strong>Find risky relationships</strong>: The model can find groups of accounts that look connected, even if the players try to hide it.</li>
+</ol>
+<section id="what-data-we-use-high-level" class="level3">
+<h3 class="anchored" data-anchor-id="what-data-we-use-high-level">What Data We Use (High Level)</h3>
+<p>We already have a lot of data on the platform. For example:</p>
+<ul>
+<li><strong>Game data</strong>: hands played, actions, bet sizes, win/loss, table history</li>
+<li><strong>Timing data</strong>: decision time, play schedule, session length</li>
+<li><strong>Account and device data</strong>: device, IP region (not exact location), browser/app info</li>
+<li><strong>Network patterns</strong>: who plays with whom, how often, and in which games</li>
+</ul>
+<p>We must handle this data carefully. We should follow privacy rules and keep access limited.</p>
+</section>
+<section id="what-the-system-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-system-does">What the System Does</h3>
+<p>At a simple level, the system works like this:</p>
+<ul>
+<li>Step A: collect features from game and account data</li>
+<li>Step B: score each player (or each session) with a risk score</li>
+<li>Step C: create alerts when the score is high</li>
+<li>Step D: send alerts to a human reviewer</li>
+<li>Step E: use reviewer feedback to improve the model</li>
+</ul>
+<p>The output is not “ban this player now”. The output is “this looks risky, please review”.</p>
+</section>
+<section id="why-this-is-better-than-only-rules" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-is-better-than-only-rules">Why This Is Better Than Only Rules</h3>
+<p>Rules are still useful. For example, “10 accounts from the same device” is a clear signal. But cheaters learn our rules. They adjust their behavior. ML can help because it looks at many small signals together, not one rule at a time.</p>
+</section>
 </section>
 <section id="my-role-leading-this-initiative" class="level2">
 <h2 class="anchored" data-anchor-id="my-role-leading-this-initiative">My Role: Leading This Initiative</h2>
-<p>I’ve spent the past year researching and building a proof-of-concept fraud detection system. I need your sponsorship to deploy this in production.</p>
+<p>Over the past year, I have researched this problem and built a proof of concept. The prototype shows we can:</p>
+<ul>
+<li>process large volumes of hand history data</li>
+<li>create simple risk scores</li>
+<li>find suspicious clusters of accounts</li>
+<li>reduce manual work for the security team</li>
+</ul>
+<p>To move from prototype to production, we need time and support. We need clear ownership, data pipelines, and a review process.</p>
+</section>
+<section id="a-simple-rollout-plan" class="level2">
+<h2 class="anchored" data-anchor-id="a-simple-rollout-plan">A Simple Rollout Plan</h2>
+<p>We can start small and reduce risk:</p>
+<ol type="1">
+<li><strong>Phase 1 (monitor only)</strong>: run the model silently and measure quality.</li>
+<li><strong>Phase 2 (alert + review)</strong>: send alerts to the security team for review.</li>
+<li><strong>Phase 3 (actions)</strong>: after we trust the system, automate safe actions (for example, extra checks, table restrictions, or faster reviews).</li>
+</ol>
+<p>This approach helps us avoid false bans. It also helps the team build trust in the tool.</p>
+</section>
+<section id="business-value-simple-view" class="level2">
+<h2 class="anchored" data-anchor-id="business-value-simple-view">Business Value (Simple View)</h2>
+<p>AI fraud detection helps us:</p>
+<ul>
+<li>protect honest players</li>
+<li>keep players longer (better retention)</li>
+<li>reduce costly incidents and bad press</li>
+<li>support licensing and compliance needs</li>
+<li>save time for the security team</li>
+</ul>
+<p>Even a small improvement can have a big impact, because poker revenue depends on active, trusted players.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Investing in AI fraud detection protects our platform and ensures growth. The return on investment is clear - we save millions while building trust with players.</p>
-</section>
-<section id="introduction-1" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-1">Introduction</h2>
-<p>As technology leaders in online gaming, you understand that fraud threatens our poker platforms. Cheaters use collusion, bots, and multi-accounting to steal from honest players. This damages our reputation, risks licenses, and drives away customers.</p>
-</section>
-<section id="why-this-matters-1" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-matters-1">Why This Matters</h2>
-<p>Fraud hurts our business in three ways:</p>
-<ul>
-<li><strong>Revenue Loss</strong>: Players leave when they lose trust</li>
-<li><strong>Reputation Damage</strong>: Bad incidents spread quickly online</li>
-<li><strong>Regulatory Risk</strong>: We must prove we protect players and maintain fair games</li>
-</ul>
-</section>
-<section id="types-of-fraud-1" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-fraud-1">Types of Fraud</h2>
-<p><strong>Collusion</strong>: Players secretly work together, sharing card information or coordinating bets.</p>
-<p><strong>Bots</strong>: Computer programs that play automatically, pretending to be human players.</p>
-<p><strong>Multi-Accounting</strong>: One person creates multiple accounts to manipulate games.</p>
-</section>
-<section id="how-data-science-helps-1" class="level2">
-<h2 class="anchored" data-anchor-id="how-data-science-helps-1">How Data Science Helps</h2>
-<p>Machine learning algorithms analyze betting patterns and player connections to detect suspicious behavior. These systems process millions of hands quickly and flag unusual patterns that humans might miss.</p>
-</section>
-<section id="my-role-leading-this-initiative-1" class="level2">
-<h2 class="anchored" data-anchor-id="my-role-leading-this-initiative-1">My Role: Leading This Initiative</h2>
-<p>I’ve spent the past year researching and building a proof-of-concept fraud detection system. I need your sponsorship to deploy this in production.</p>
-</section>
-<section id="conclusion-1" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-1">Conclusion</h2>
-<p>Investing in AI fraud detection protects our platform and ensures growth. The return on investment is clear - we save millions while building trust with players.</p>
+<p>Fraud is a real threat for online poker platforms. It damages trust, revenue, and compliance. Cheaters are also improving their tools, so we must improve our defenses.</p>
+<p>AI and machine learning will not solve everything alone. But they can help us find fraud faster and more accurately. With a careful rollout and strong human review, we can protect honest players and grow the business safely.</p>
 
 
 </section>
